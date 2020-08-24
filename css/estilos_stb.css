@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap");
+body {
+  font-family: 'Quicksand', sans-serif; }
+
+@keyframes animacion__imagen__nosotros {
+  from {
+    opacity: 0%; }
+  to {
+    opacity: 100%; } }
+
+.imagen__nosotros__animada {
+  animation-duration: 2s;
+  animation-name: animacion__imagen__nosotros; }
+
+.fontNav {
+  font-size: 20px;
+  background-color: white; }
+
+.padImgBanner {
+  padding: 10px 5px 10px 5px; }
+
+.padImgDest {
+  padding: 5px 5px 5px 5px; }
+
+.destacados_imagen_padding {
+  padding: 5px 5px 5px 5px; }
+
+.producto__destacado__1 {
+  padding: 5px 5px 5px 5px; }
+
+.producto__destacado__2 {
+  padding: 5px 5px 5px 5px; }
+
+.producto__destacado__3 {
+  padding: 5px 5px 5px 5px; }
+
+.producto__destacado__4 {
+  padding: 5px 5px 5px 5px; }
+
+.producto__destacado__5 {
+  padding: 5px 5px 5px 5px; }
+
+.producto__destacado__6 {
+  padding: 5px 5px 5px 5px; }
+
+.footer_padding {
+  padding: 5px 5px 5px 5px; }
+
+.nosotros__padding {
+  padding: 5px 5px 5px 5px; }
+
+.footer__fondo {
+  background-image: linear-gradient(to top, #b0b0b0, #d1d0d0);
+  padding: 5px 20px 10px 20px;
+  margin-top: 10px; }
+
+.titulos_novedades {
+  font-size: 10px, 8;
+  text-align: center;
+  font-weight: 600; }
+
+h1 {
+  font-size: 20px;
+  font-weight: 600; }
+
+.titulos__secciones {
+  font-size: 20px;
+  font-weight: 600; }
+
+.titulos__producto {
+  font-size: 18px;
+  text-align: center; }
+
+.titulos__producto--bold {
+  font-weight: 600; }
+
+.bordeDivisor {
+  border-color: #545454; }
+
+.tabla__productos_fuente {
+  font-size: 13px; }
+
+iframe {
+  width: 100%;
+  height: 400px;
+  position: absolute; }
+
+.btnColor {
+  background-color: #b0b0b0;
+  border-color: #b0b0b0; }
+
+.btnColor:hover {
+  background-color: #545454;
+  border-color: #545454; }

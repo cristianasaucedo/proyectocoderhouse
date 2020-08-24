@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+$gris-claro: #b0b0b0;
+
+$gris-oscuro: #545454;
+
+$fuente-tamaño: 10px;
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+@keyframes animacion__imagen__nosotros {
+  from {
+  	opacity: 0%;
+  }
+
+  to {
+  	opacity: 100%;
+  }
+}
+
+.imagen__nosotros__animada {
+	animation-duration: 2s;
+	animation-name: animacion__imagen__nosotros;
+}
+
+
+.fontNav {
+	font-size: $fuente-tamaño *2;
+	background-color: white;
+}
+
+.padImgBanner {
+	padding: 10px 5px 10px 5px;
+}
+
+.padImgDest {
+	padding: 5px 5px 5px 5px;
+}
+
+.destacados_imagen_padding {
+	padding: 5px 5px 5px 5px;
+}
+
+@for $x from 1 through 6 {
+  .producto__destacado__#{$x}
+  	{ padding: 5px 5px 5px 5px;
+  	 }
+}
+
+
+
+.footer_padding {
+	padding: 5px 5px 5px 5px;
+}
+
+.nosotros__padding {
+	padding: 5px 5px 5px 5px;
+}
+
+.footer__fondo {
+	background-image: linear-gradient(to top, $gris-claro, #d1d0d0);
+	padding: 5px 20px 10px 20px;
+	margin-top: 10px;
+}
+
+.titulos_novedades {
+	font-size: $fuente-tamaño *1,8;
+	text-align: center;
+	font-weight: 600;
+}
+
+h1 {
+	font-size: $fuente-tamaño *2;
+	font-weight: 600;
+}
+
+.titulos__secciones {
+	font-size: $fuente-tamaño *2;
+	font-weight: 600;
+}
+
+.titulos__producto {
+	font-size: $fuente-tamaño *1.8;
+	text-align: center;
+}
+
+.titulos__producto--bold {
+	font-weight: 600;
+}
+
+.bordeDivisor {
+	border-color: $gris-oscuro;
+}
+
+.tabla__productos_fuente {
+	font-size: $fuente-tamaño *1.3;
+}
+
+iframe {
+width:100%;
+height: 400px;
+position:absolute;
+}
+
+.btnColor {
+	background-color: $gris-claro;
+	border-color: $gris-claro;
+}
+
+.btnColor:hover {
+	background-color: $gris-oscuro;
+	border-color: $gris-oscuro;
+}

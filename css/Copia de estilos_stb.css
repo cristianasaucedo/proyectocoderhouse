@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+.fontNav {
+	font-size: 20px;
+	background-color: white;
+}
+
+.padImgBanner {
+	padding: 10px 5px 10px 5px;
+}
+
+.padImgDest {
+	padding: 5px 5px 5px 5px;
+}
+
+.padImgFooter {
+	padding: 20px 20px 20px 20px;
+}
+
+.fondoFooter {
+	background-image: linear-gradient(to top, #b0b0b0, #d1d0d0);
+	padding: 5px 20px 10px 20px;
+	margin-top: 10px;
+}
+
+.fontTitulos {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.bordeDivisor {
+	border-color: black;
+}
+
+.fontTituloNovedad {
+	font-size: 1.2rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+.tamañoFuenteTabla {
+	font-size: 0.8rem;
+}
+
+.fontTituloProducto {
+	font-size: 1rem;
+	text-align: center;
+	font-weight: 600;
+}
+
+iframe {
+width:100%;
+height: 400px;
+position:absolute;
+}
+
+.btnColor {
+	background-color: #b0b0b0;
+	border-color: #b0b0b0;
+}
+
+.btnColor:hover {
+	background-color: #545454;
+	border-color: #545454;
+}
+

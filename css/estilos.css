@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap');
+
+body {
+	font-family: 'Quicksand', sans-serif;
+}
+
+#grilla {
+	display: grid;
+	grid-template-rows: 170px 125px auto auto 100px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"cabecera"
+		"banerCentral"
+		"destacadosuno"
+		"destacadosdos"
+		"piecera";
+}
+
+header {
+	grid-area: cabecera;
+}
+
+#bannerInicial {
+	display: flex;
+	justify-content: center;
+	margin: 0px 0px 0px 0px;
+	grid-area: banerCentral;
+}
+
+#destacados  {
+	grid-area: destacados;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#destacadosdos  {
+	grid-area: destacadosdos;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#destacadosuno  {
+	grid-area: destacadosuno;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.productoDestacado {
+	padding: 3px 3px 3px 3px;
+	margin: 5px 5px 5px 5px;
+}
+
+.contenedorCabecera {
+	display: flex;
+	flex-direction: column;
+	height: 180px;
+	align-items: center;
+}
+
+#logo {
+	margin: 20px 10px 10px 10px;
+}
+
+#logoHome {
+	display: flex;
+	justify-content: center;
+}
+
+.tituloCategorias {
+	margin: 0px 10px 5px 10px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.textosPrincipales {
+	margin: 5px 10px 10px 10px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+.textoNovedades {
+	font-size: 15px;
+	color: #828282;
+	font-weight: 400;
+}
+
+.nombreProducto {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.nombreNovedad {
+	font-size: 15px;
+	font-weight: 600;
+	color: #828282;
+}
+
+
+
+
+#nosotros {
+	display: flex;
+	flex-direction: column;
+	margin: 5px 10px 10px 10px;
+}
+
+#centrarNosotros {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 10px 10px 10px;
+}
+
+#novedades {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 10px 10px 10px 10px;
+}
+
+.novedad {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100px;
+	margin: 10px 10px;
+	padding: 5px 5px;
+}
+
+.imgNovedad {
+	flex-shrink: 1;
+}
+
+
+#productos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 10px 10px 10px 10px;
+}
+
+.producto {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100px;
+	margin: 10px 10px;
+	padding: 5px 5px;
+}
+
+footer {
+	grid-area: piecera;
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	justify-content: space-between;
+	padding: 10px 10px 10px 10px;
+	position: sticky;
+	bottom: 0;
+    background-image: linear-gradient(to top, black, #b0b0b0);
+}
+
+.redes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 5px 5px;
+	padding: 5px 5px;
+}
+
+.news {
+	margin: 5px 5px;
+	padding: 5px 5px;
+}
+
+.iconoSocial {
+	width: 50%;
+}
+
+input:focus {
+	background-color: #9b9a9a;
+	color: black;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+#grilla {
+	display: grid;
+	grid-template-rows: 170px 300px auto auto 100px;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+		"cabecera"
+		"banerCentral"
+		"destacadosuno"
+		"destacadosdos"
+		"piecera";
+}
+
+#bannerNosotros {
+	animation-duration: 2s;
+	animation-name: imgNosotros;
+}
+
+@keyframes imgNosotros {
+  from {
+  	opacity: 0%;
+    margin-left: 100%;
+    width: 200%
+  }
+
+  to {
+  	opacity: 100%;
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
+#destacados  {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	grid-area: destacados;
+	padding: 0px 50px 0px 50px;
+
+}
+
+#destacadosuno  {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	grid-area: destacadosuno;
+	padding: 0px 50px 0px 50px;
+
+}
+
+#destacadosdos  {
+	display: flex;
+	flex-flow: row;
+	justify-content: center;
+	grid-area: destacadosdos;
+	padding: 0px 50px 0px 50px;
+
+}
+
+.productoDestacado {
+	max-width: 300px;
+	padding: 3px 3px 3px 3px;
+	margin: 5px 5px 5px 5px;
+}
+
+.tituloCategorias {
+	margin: 5px 10px 5px 10px;
+	font-size: 25px;
+	font-weight: 600;
+}
+
+.textosPrincipales {
+	width: 900px;
+	margin: 5px 10px 10px 10px;
+	font-size: 15px;
+	font-weight: 400;
+}
+
+
+.textoNovedades {
+	font-size: 15px;
+	color: #828282;
+	font-weight: 400;
+}
+
+.nombreProducto {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.nombreNovedad {
+	font-size: 15px;
+	font-weight: 600;
+	color: #828282;
+}
+
+.contenedorCabecera {
+	display: flex;
+	flex-direction: column;
+	height: 180px;
+	align-items: center;
+}
+
+
+
+
+
+#logo {
+	margin: 20px 10px 10px 10px;
+}
+
+#logoHome {
+	display: flex;
+	justify-content: center;
+}
+
+#bannerInicial {
+	display: flex;
+	justify-content: center;
+	margin: 0px 20px 20px 20px;
+}
+
+
+footer {
+	display: flex;
+	flex-direction: row;
+	align-items: top;
+	justify-content: space-between;
+	padding: 10px 10px 10px 10px;
+	position: sticky;
+	bottom: 0;
+    background-image: linear-gradient(to top, black, #b0b0b0);
+}
+
+#nosotros {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 10px 10px 10px;
+}
+
+#centrarNosotros {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 5px 10px 10px 10px;
+}
+
+#novedades {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 10px 10px 10px 10px;
+}
+
+.novedad {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100px;
+	margin: 10px 10px;
+	padding: 5px 5px;
+}
+
+
+#productos {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	margin: 10px 10px 10px 10px;
+}
+
+.producto {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100px;
+	margin: 10px 10px;
+	padding: 5px 5px;
+}
+
+.redes {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	margin: 5px 5px;
+	padding: 5px 5px;
+}
+
+.news {
+	margin: 5px 5px;
+	padding: 5px 5px;
+}
+
+.iconoSocial {
+	width: 50%;
+}
+
+input:focus {
+	background-color: #9b9a9a;
+	color: black;
+}
+	
+}
+
+
+
+
